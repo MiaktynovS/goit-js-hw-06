@@ -16,8 +16,9 @@ console.log(refs.bodyEl);
 refs.btnEl.addEventListener('click', onTakeBtn)
 
 function onTakeBtn() {
-  refs.spanEl.textContent = getRandomHexColor();
-  refs.bodyEl.style.backgroundColor = getRandomHexColor();
+  let color = getRandomHexColor();
+  refs.spanEl.textContent = color;
+  refs.bodyEl.style.backgroundColor = color;
 }
 
 
